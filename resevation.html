@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi - Smart Fit Hub</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+    
+    <h2>Formulir Reservasi</h2>
+    
+    <form action="#" method="POST">
+        <div class="form-grid">
+            
+            <div class="form-group full-width">
+                <label>Nama Lengkap *</label>
+                <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" name="email" placeholder="nama@contoh.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nomor HP *</label>
+                <input type="tel" name="no_hp" placeholder="08xxxxxxxxxx" required>
+            </div>
+
+            <div class="form-group">
+                <label>Tanggal Reservasi *</label>
+                <input type="date" name="tanggal" required>
+            </div>
+
+            <div class="form-group">
+                <label>Jam Reservasi *</label>
+                <input type="time" name="jam" required>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Program</label>
+                <select name="program">
+                    <option value="">-- Pilih Program --</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="hiit">HIIT</option>
+                    <option value="pt">Personal Training</option>
+                    <option value="strength">Strength Training</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Pilih Cabang</label>
+                <select name="cabang">
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label>Catatan Khusus</label>
+                <textarea name="catatan" rows="3" placeholder="Contoh: Memiliki cedera lutut..."></textarea>
+            </div>
+
+            <div class="form-group full-width checkbox-group">
+                <input type="checkbox" name="konfirmasi" id="konfirmasi" required>
+                <label for="konfirmasi">Saya mengonfirmasi bahwa data yang diisi sudah benar.</label>
+            </div>
+
+            <div class="full-width">
+                <button type="submit" class="btn-submit">SUBMIT SEKARANG</button>
+            </div>
+
+        </div>
+    </form>
+
+    <hr class="divider">
+
+    <div class="faq-section">
+        <h3>Pertanyaan Umum (FAQ)</h3>
+        <div class="faq-item">
+            <p class="faq-question">1. Apakah reservasi ini dipungut biaya?</p>
+            <p class="faq-answer">Pendaftaran via website bersifat gratis. Pembayaran program dilakukan di lokasi.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">2. Kapan saya mendapatkan konfirmasi?</p>
+            <p class="faq-answer">Tim admin kami akan menghubungi Anda melalui WhatsApp dalam waktu maksimal 1x24 jam.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">3. Bolehkah ganti jadwal?</p>
+            <p class="faq-answer">Boleh, silakan hubungi admin support kami paling lambat 6 jam sebelum waktu reservasi.</p>
+        </div>
+    </div>
+
+    <div class="support-contact">
+        <h3>Butuh Bantuan Cepat?</h3>
+        <p>WhatsApp: <strong>+62 812-3456-7890</strong></p>
+        <p>Email: <strong>support@smartfithub.com</strong></p>
+    </div>
+</div>
+
+</body>
+</html>
